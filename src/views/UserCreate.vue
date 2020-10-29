@@ -67,6 +67,7 @@ export default {
           this.user.birthday = "";
           this.user.phone = "";
           this.user.nationality = "";
+          this.$router.push("/listuser");
         })
         .catch(error => {
           console.log(error);

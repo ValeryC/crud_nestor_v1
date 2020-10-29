@@ -1,0 +1,34 @@
+{
+  "apartments": [
+    {
+      "id": "6176ce84-0cc7-4a9b-8273-213b68aa9d7a",
+      "number": "1",
+      "name": "rue de la boérie",
+      "street": null,
+      "zipCode": null,
+      "rooms": [
+        { "number": "13", "area": "13", "price": "13" },
+        { "number": "12", "area": "12", "price": "12" }
+      ]
+    },
+    {
+      "id": "test-apartment-1",
+      "number": "1",
+      "name": "Apartment 1",
+      "street": "street Test 1",
+      "zipCode": "1001",
+      "rooms": [
+        { "number": "11", "area": "east", "price": "free" },
+        { "number": "12", "area": "south", "price": "1.00" }
+      ]
+    },
+    {
+      "id": "test-apartment-2",
+      "number": "2",
+      "name": "Apartment 2",
+      "street": "street Test 2",
+      "zipCode": "1002",
+      "rooms": [{ "number": "21", "area": "north", "price": "2000.00" }]
+    }
+  ]
+}

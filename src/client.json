@@ -1,0 +1,39 @@
+{
+  "clients": [
+    {
+      "id": "test-john-doe",
+      "firstName": "John",
+      "lastName": "Doe",
+      "phone": "00 00 00 00 00",
+      "birthDate": "1970-01-01",
+      "nationality": "UK",
+      "bookings": [
+        {
+          "createdAt": "1970-01-01T00:00:00.000Z",
+          "updatedAt": "1970-01-01T00:00:00.000Z",
+          "room": { "number": "11", "area": "east", "price": "free" }
+        },
+        {
+          "createdAt": "1970-01-01T00:00:00.000Z",
+          "updatedAt": "1970-01-01T00:00:00.000Z",
+          "room": { "number": "12", "area": "south", "price": "1.00" }
+        }
+      ]
+    },
+    {
+      "id": "test-brad-pitt",
+      "firstName": "Brad",
+      "lastName": "Pitt",
+      "phone": "00 00 00 00 00",
+      "birthDate": "1970-01-01",
+      "nationality": "USA",
+      "bookings": [
+        {
+          "createdAt": "1970-01-01T00:00:00.000Z",
+          "updatedAt": "1970-01-01T00:00:00.000Z",
+          "room": { "number": "21", "area": "north", "price": "2000.00" }
+        }
+      ]
+    }
+  ]
+}

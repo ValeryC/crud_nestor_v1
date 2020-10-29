@@ -25,6 +25,11 @@ const routes = [
     component: () => import("../views/UserEdit")
   },
   {
+    path: "/detailuser",
+    name: "detailuser",
+    component: () => import("../views/UserDetail")
+  },
+  {
     path: "/createflat",
     name: "createflat",
     component: () => import("../views/Createflat")

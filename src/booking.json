@@ -1,0 +1,67 @@
+{
+  "bookings": [
+    {
+      "id": "test-booking-1",
+      "createdAt": "1970-01-01T00:00:00.000Z",
+      "updatedAt": "1970-01-01T00:00:00.000Z",
+      "client": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "phone": "00 00 00 00 00"
+      },
+      "room": {
+        "number": "11",
+        "area": "east",
+        "price": "free",
+        "apartment": {
+          "number": "1",
+          "name": "Apartment 1",
+          "street": "street Test 1",
+          "zipCode": "1001"
+        }
+      }
+    },
+    {
+      "id": "test-booking-2",
+      "createdAt": "1970-01-01T00:00:00.000Z",
+      "updatedAt": "1970-01-01T00:00:00.000Z",
+      "client": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "phone": "00 00 00 00 00"
+      },
+      "room": {
+        "number": "12",
+        "area": "south",
+        "price": "1.00",
+        "apartment": {
+          "number": "1",
+          "name": "Apartment 1",
+          "street": "street Test 1",
+          "zipCode": "1001"
+        }
+      }
+    },
+    {
+      "id": "test-booking-3",
+      "createdAt": "1970-01-01T00:00:00.000Z",
+      "updatedAt": "1970-01-01T00:00:00.000Z",
+      "client": {
+        "firstName": "Brad",
+        "lastName": "Pitt",
+        "phone": "00 00 00 00 00"
+      },
+      "room": {
+        "number": "21",
+        "area": "north",
+        "price": "2000.00",
+        "apartment": {
+          "number": "2",
+          "name": "Apartment 2",
+          "street": "street Test 2",
+          "zipCode": "1002"
+        }
+      }
+    }
+  ]
+}

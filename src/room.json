@@ -1,0 +1,39 @@
+{
+  "rooms": [
+    {
+      "id": "4ad9f010-d738-467d-b712-5e2685b1cd70",
+      "number": "13",
+      "area": "13",
+      "price": "13",
+      "apartment": { "number": "1", "name": "rue de la boérie" }
+    },
+    {
+      "id": "4d2df30b-1105-4622-a6e1-cd39b3f9c435",
+      "number": "12",
+      "area": "12",
+      "price": "12",
+      "apartment": { "number": "1", "name": "rue de la boérie" }
+    },
+    {
+      "id": "test-room-1",
+      "number": "11",
+      "area": "east",
+      "price": "free",
+      "apartment": { "number": "1", "name": "Apartment 1" }
+    },
+    {
+      "id": "test-room-2",
+      "number": "12",
+      "area": "south",
+      "price": "1.00",
+      "apartment": { "number": "1", "name": "Apartment 1" }
+    },
+    {
+      "id": "test-room-3",
+      "number": "21",
+      "area": "north",
+      "price": "2000.00",
+      "apartment": { "number": "2", "name": "Apartment 2" }
+    }
+  ]
+}
