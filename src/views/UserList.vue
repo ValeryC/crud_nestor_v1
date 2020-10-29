@@ -6,7 +6,7 @@
         <thead>
           <tr>
             <th>Id</th>
-            <th>Firstname</th>
+            <th>firstname</th>
             <th>Lastname</th>
             <th>Phone</th>
             <th>Birthday</th>

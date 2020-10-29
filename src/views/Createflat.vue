@@ -16,7 +16,7 @@
 
           <div class="form-group">
             <label>Name</label>
-            <input type="text" class="form-control" v-model="flat.name" required>
+            <input type="text" class="form-control" v-model="flat.nameflat" required>
           </div>
 
           <div class="form-group">
@@ -32,6 +32,17 @@
           <div class="form-group">
             <label>rooms</label>
             <input type="text" class="form-control" v-model="flat.rooms" required>
+          </div>
+
+          <button @click="addRoom">Add another previous room</button>
+          <div class="previous" v-for="(applicant, counter) in applicants" v-bind:key="counter">
+            <button @click="deleteRoom(counter)">X</button>
+            <label for="duration">{{counter+1}}number</label>
+            <input type="text" v-model="applicant.number" required>
+            <label for="duration">area</label>
+            <input type="text" v-model="applicant.area" required>
+            <label for="duration">price</label>
+            <input type="text" v-model="applicant.price" required>
           </div>
 
           <div class="form-group">
@@ -51,7 +62,14 @@ import { db } from "../firebaseDb";
 export default {
   data() {
     return {
-      flat: {}
+      flat: {},
+      applicants: [
+        {
+          number: "",
+          area: "",
+          price: ""
+        }
+      ]
     };
   },
   methods: {
@@ -63,7 +81,7 @@ export default {
           alert("Flat successfully created!");
           this.flat.idflat = "";
           this.flat.number = "";
-          this.flat.name = "";
+          this.flat.nameflat = "";
           this.flat.street = "";
           this.flat.zipcode = "";
           this.flat.rooms = "";
@@ -72,6 +90,16 @@ export default {
         .catch(error => {
           console.log(error);
         });
+    },
+    addRoom() {
+      this.applicants.push({
+        number: "",
+        area: "",
+        price: ""
+      });
+    },
+    deleteRoom(counter) {
+      this.applicants.splice(counter, 1);
     }
   }
 };
