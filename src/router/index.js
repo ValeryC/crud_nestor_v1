@@ -1,28 +1,43 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from "vue"
+import VueRouter from "vue-router"
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'add',
-    component: () => import('../components/UserCreate')
+    path: "/",
+    name: "Home",
+    component: () => import("../components/Home")
   },
   {
-    path: '/list',
-    name: 'list',
-    component: () => import('../components/UserList')
+    path: "/adduser",
+    name: "adduser",
+    component: () => import("../views/UserCreate")
   },
   {
-    path: '/edit/:id',
-    name: 'edit',
-    component: () => import('../components/UserEdit')
+    path: "/listuser",
+    name: "listuser",
+    component: () => import("../views/UserList")
+  },
+  {
+    path: "/edit/:id",
+    name: "edituser",
+    component: () => import("../views/UserEdit")
+  },
+  {
+    path: "/createflat",
+    name: "createflat",
+    component: () => import("../views/Createflat")
+  },
+  {
+    path: "/listflat",
+    name: "listflat",
+    component: () => import("../views/Listflat")
   }
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
   routes
 })
